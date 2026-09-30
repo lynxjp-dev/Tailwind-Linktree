@@ -1,0 +1,134 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+body {
+    background:
+        radial-gradient(
+            circle at top,
+            #252530 0%,
+            #111116 45%,
+            #08080b 100%
+        );
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1c1c24;
+
+    border: 2px solid #ef4444;
+
+    font-size: 42px;
+
+    box-shadow:
+        0 0 30px rgba(239, 68, 68, 0.20);
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.link-card {
+    width: 100%;
+
+    min-height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background: rgba(25, 25, 32, 0.9);
+
+    border: 1px solid #30303a;
+
+    border-radius: 12px;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+
+    backdrop-filter: blur(8px);
+}
+
+.link-card span {
+    margin-left: 10px;
+}
+
+.link-card:hover {
+    background: #ef4444;
+
+    border-color: #ef4444;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(239, 68, 68, 0.20);
+}
+
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.social {
+    color: #85858f;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+.social:hover {
+    color: #ef4444;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 500px) {
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 26px !important;
+    }
+
+    .social {
+        font-size: 12px;
+    }
+
+}
